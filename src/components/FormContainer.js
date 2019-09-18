@@ -30,7 +30,7 @@ onChange = (event) => {
 }
 
 onFocusOut = (event) => {
-  request.get(`https://photon.komoot.de/api/?q=${event.target.value}}`)
+  request.get(`https://photon.komoot.de/api/?q=${event.target.value}`)
   .then(res => {
     this.setState({
       straatnaam:res.body.features[0].properties.name,

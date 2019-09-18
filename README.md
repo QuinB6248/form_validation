@@ -44,7 +44,7 @@ The data that is entered will be written to JSON server. See instructions below:
 * CSS Flexbox
 
 
-### File set up
+### File setup
 
 - **[index](./src/index.js)**
 The root render App component wrapped in BrowserRouter
@@ -59,7 +59,7 @@ Actions to send data from your application to your store with A GET and POST req
 - **[db](./db.json)**
 JSON server file
 - **[css](./index.css)**
-Styling components
+Styling 
 
 
 ##### Components
