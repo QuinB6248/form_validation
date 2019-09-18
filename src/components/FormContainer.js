@@ -17,10 +17,10 @@ state = {
   }
  
 onSubmit = (event) => {
- event.preventDefault()
- this.props.information(this.state)
+  event.preventDefault()
+  this.props.information(this.state)
   this.props.postinfo(this.state)
- this.props.history.push("/info");
+  this.props.history.push("/info");
 }
 
 onChange = (event) => {

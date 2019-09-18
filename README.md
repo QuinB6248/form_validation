@@ -1,10 +1,19 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Table of contents:
+- **[Getting Started](#getting-started)**
+- **[Goal for this project](#goal-for-this-project)**
+- **[Test POST and GET Route with JSON server](#test-post-and-get-route-with-json-server)**
+- **[Technologies used](#technologies-used)**
+- **[File setup](#file-setup)**
 
-In the project directory, you can run:
 
-### `npm start`
+### Getting Started
+
+* Installing dependencies: npm install (command line)
+* In terminal run app with: npm run start
+
+#### `npm start`
 
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -12,75 +21,53 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
 
+### Goal for this project
 
+Build a form with validation and auto-completion (by entering a dutch ZIPcode it will complete the street and city input) with use of an API: https://photon.komoot.de
+The data that is entered will be written to JSON server. See instructions below:
 
-## Test POST and GET Route with JSON server
+#### Test POST and GET Route with JSON server
 
 * instal JSON server: npm install -g json-server
 * run JSON server with following command: json-server --port 4000 db.json
 * to see results go to: http://localhost:4000/info
+* check db.json file 
+
+### Technologies used
+
+* Node.js
+* npm
+* React
+* Redux
+* superagent
+* JSON server
+* CSS Flexbox
 
 
+### File set up
+
+- **[index](./src/index.js)**
+The root render App component wrapped in BrowserRouter
+- **[App](./src/App.js)**
+App.js render Routes wrapped in Provider which gives access to the redux store 
+- **[store](./src/store.js)**
+The store lives in here
+- **[reducers](./src/reducers/index.js)**
+Combine reducers defines how the state of the store changes when an action is dispatched
+- **[actions](./src/actions.js)**
+Actions to send data from your application to your store with A GET and POST request to test with JSON server
+- **[db](./db.json)**
+JSON server file
+- **[css](./index.css)**
+Styling components
 
 
-
-
-
-
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+##### Components
+- **[FormContainer](./src/index.js)**
+Container for the FormDetails, defines local state and functions and passes this to the FormDetails component
+- **[FormDetails](./src/App.js)**
+Displays the Form
+- **[Info](./src/store.js)**
+Displays info to the screen
 
 
