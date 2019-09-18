@@ -1,13 +1,130 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+body {
+  font-family: 'Nunito', sans-serif;
+  color: #384047; 
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  margin: 10px auto;
+  background: #f4f7f8;
+  border-radius: 8px;
+  max-width:1000px;
+  min-width:280px;
+}
+
+h1{
+  display: flex;
+  justify-content: center;
+  margin: 0 0 30px 0;
+}
+
+.field {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.inputfield {
+  display: flex;
+  flex-flow: nowrap;
+  margin: 5px;
+  padding: 10px;
+}
+
+label {
+  width:120px;
+  
+}
+
+input {
+  background:rgba(255,255,255,01);
+  flex: 1;
+  border: none;
+  font-size: 16px;
+  margin: 0;
+  outline: 0;
+  padding:10px;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgb(0,0,0,0.3) inset;
+}
+
+.input_klein{
+  width: 100px;
+}
+
+input:focus {
+  box-shadow: 0 0 5px rgb(81,203,238,1);
+  border: 1px solid rgb(81,203,238,1);
+}
+
+.box_klein{
+  flex: 1 0 25%;
+}
+.box_middel{
+  flex: 1 0 60%;
+}
+.box_groot{
+  flex: 1 0 90%;
+}
+
+.buttonfield {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  flex: 1 0 90%;
+  justify-content: center;
+  padding: 10px 20px;
+  color: #FFF;
+  background-color:  #b4cbdc;
+  font-size: 18px;
+  font-style: normal;
+  border-radius: 5px;
+  width: 50%;
+  border: 1px solid #8a97a0;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin: 30px 0 0;
+}
+
+@media all and (max-width: 400px) {
+  .inputfield {
+      display: flex;
+      flex-flow: wrap;
+      margin: 5px;
+      padding: 10px;
+  }
+  
+  .input_klein{
+    width: 200px;
+  }
+} 
+
+
+/* Displaying Info */
+
+.infodisplay {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  margin: 10px auto;
+  background: #f4f7f8;
+  border-radius: 8px;
+  max-width:300px;
+  min-width:280px;
+}
+.displayfield {
+  display: flex;
+  flex-direction: row;
+}
+
+.namefield{
+  padding: 2px;
 }

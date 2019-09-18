@@ -12,6 +12,22 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
 
+
+
+## Test POST and GET Route with JSON server
+
+* instal JSON server: npm install -g json-server
+* run JSON server with following command: json-server --port 4000 db.json
+* to see results go to: http://localhost:4000/info
+
+
+
+
+
+
+
+
+
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.<br>
@@ -66,3 +82,5 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+

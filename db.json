@@ -1,0 +1,59 @@
+{
+  "info": [
+    {
+      "id": 1,
+      "voorletters": "A.A.",
+      "tussenvoegsel": "den",
+      "achternaam": "Besten",
+      "postcode": "3035WL",
+      "straatnaam": "Fakestraat",
+      "stad": "Vlissingen",
+      "huisnummer": 25,
+      "email": "AdenBesten@gmail.com"
+    },
+    {
+      "voorletters": "J.A.",
+      "tussenvoegsel": "",
+      "achternaam": "van der van der Hoeven",
+      "postcode": "3089WL",
+      "straatnaam": "Slinge",
+      "stad": "Rotterdam",
+      "huisnummer": "3039WL",
+      "email": "jack@hotmail.com",
+      "id": 2
+    },
+    {
+      "voorletters": "B.G.",
+      "tussenvoegsel": "den",
+      "achternaam": "Besten",
+      "postcode": "3039WL",
+      "straatnaam": "Boreelstraat",
+      "stad": "Rotterdam",
+      "huisnummer": "24",
+      "email": "jon@hotmail.com",
+      "id": 3
+    },
+    {
+      "voorletters": "J.A.",
+      "tussenvoegsel": "den",
+      "achternaam": "van der van der Hoeven",
+      "postcode": "3089WL",
+      "straatnaam": "Slinge",
+      "stad": "Rotterdam",
+      "huisnummer": "3039WL",
+      "email": "jack@hotmail.com",
+      "id": 4
+    },
+    {
+      "voorletters": "B.",
+      "tussenvoegsel": "den",
+      "achternaam": "Best",
+      "postcode": "3039WL",
+      "straatnaam": "Boreelstraat",
+      "stad": "Rotterdam",
+      "huisnummer": "12",
+      "email": "jon@hotmail.com",
+      "id": 5
+    }
+  ]
+}
